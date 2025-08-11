@@ -1,4 +1,4 @@
-# Hackathon: [Your Hackathon Name Here]
+# Odoo Hackathon 2025
 
 ## Team Number: 248
 

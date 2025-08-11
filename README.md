@@ -8,6 +8,8 @@
 - Advait Pandya
 - Nihar Mehta
 
+## Problem Statement:
+- 3. Rental Management
 ---
 
 Thank you for checking out our project!

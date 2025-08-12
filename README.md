@@ -12,7 +12,7 @@
 
 ## Problem Statement 3: RentalHub - Rental Management System
 
-RentalHub is an integrated rental management system developed for the Odoo Hackathon 2025. It aims to streamline the process of managing rental assets, customers, contracts, and payments for businesses of any size.
+RentalHub is an integrated rental management system developed for the Odoo Hackathon 2025. It aims to streamline the process of managing rental assets, customers, contracts, and payments for businesse[...]
 
 ---
 
@@ -23,12 +23,13 @@ RentalHub is an integrated rental management system developed for the Odoo Hacka
 - [Tech Stack](#tech-stack)
 - [Frontend Setup](#frontend-setup)
 - [Backend Setup](#backend-setup)
+- [Demo Video](#demo-video)  
 
 ---
 
 ## Overview
 
-RentalHub provides a seamless experience for rental businesses to manage their inventory, track orders, handle payments, and interact with customers. The system is built using Odoo as the backend, with a modern frontend interface for ease of use.
+RentalHub provides a seamless experience for rental businesses to manage their inventory, track orders, handle payments, and interact with customers. The system is built using Odoo as the backend, wit[...]
 
 ---
 
@@ -116,3 +117,12 @@ RentalHub provides a seamless experience for rental businesses to manage their i
    - Products: `/api/v1/products`
    - Rentals: `/api/v1/rentals`
    - Invoices: `/api/v1/invoices`
+
+---
+
+## Demo Video
+
+Watch the demo video of RentalHub here:  
+**[Google Drive Link - https://drive.google.com/file/d/1oeR7uQSr4P8B_DbS8inwZdVQnw4gXI7O/view?usp=sharing]**  
+
+---

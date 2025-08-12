@@ -45,9 +45,9 @@ RentalHub provides a seamless experience for rental businesses to manage their i
 
 ## Tech Stack
 
-- *Backend:* Odoo (Python, PostgreSQL), Node.js (Express), MongoDB
-- *Frontend:* React (TypeScript), Vite, Tailwind CSS, HTML, CSS, JavaScript
-- *API:* RESTful (Express controllers, Odoo integration)
+- **Backend:** Odoo (Python, PostgreSQL), Node.js (Express), MongoDB
+- **Frontend:** React (TypeScript), Vite, Tailwind CSS, HTML, CSS, JavaScript
+- **API:** RESTful (Express controllers, Odoo integration)
 
 ---
 
@@ -55,26 +55,25 @@ RentalHub provides a seamless experience for rental businesses to manage their i
 
 1. Clone the repository and navigate to the frontend directory:
 
-   bash
+   ```bash
    git clone https://github.com/nihar245/odoo_rental_system.git
    cd odoo_rental_system/Frontend
-   
+   ```
 
 2. Install all dependencies:
 
-   bash
+   ```bash
    npm install
-   
+   ```
 
 3. Run the development server:
 
-   bash
+   ```bash
    npm i vite
    npm run dev
-   
+   ```
 
-   The frontend will be available at http://localhost:5173 by default.
-
+   The frontend will be available at [http://localhost:5173](http://localhost:5173) by default.
 
 ---
 
@@ -84,36 +83,36 @@ RentalHub provides a seamless experience for rental businesses to manage their i
 
 2. Navigate to the backend directory:
 
-   bash
+   ```bash
    cd odoo_rental_system/Backend
-   
+   ```
 
 3. Install all dependencies:
 
-   bash
+   ```bash
    npm install
-   
+   ```
 
-4. Create a .env file in the Backend directory and add your environment variables. Example:
+4. Create a `.env` file in the Backend directory and add your environment variables. Example:
 
-   
+   ```env
    MONGODB_URI=mongodb://localhost:27017
    PORT=8000
    ACCESS_TOKEN_SECRET=your_access_secret
    REFRESH_TOKEN_SECRET=your_refresh_secret
    CORS_ORIGIN=http://localhost:5173
-   
+   ```
 
 5. Start the backend server:
 
-   bash
+   ```bash
    npm run dev
-   
+   ```
 
-   The backend server will start at http://localhost:8000 by default.
+   The backend server will start at [http://localhost:8000](http://localhost:8000) by default.
 
-6. *API Endpoints:*
-   - Users: /api/v1/users
-   - Products: /api/v1/products
-   - Rentals: /api/v1/rentals
-   - Invoices: /api/v1/invoices
+6. **API Endpoints:**
+   - Users: `/api/v1/users`
+   - Products: `/api/v1/products`
+   - Rentals: `/api/v1/rentals`
+   - Invoices: `/api/v1/invoices`

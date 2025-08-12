@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-slate-50 via-zinc-100 to-emerald-50 text-black font-sans antialiased dark:from-zinc-950 dark:via-zinc-900 dark:to-emerald-950 dark:text-white;
+    background-attachment: fixed;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Mobile-first responsive typography */
+  h1 {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold;
+  }
+  
+  h2 {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold;
+  }
+  
+  h3 {
+    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium;
+  }
+  
+  p {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-3 py-2 sm:px-4 sm:py-2 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 text-sm sm:text-base;
+  }
+  
+  .btn-disabled {
+    @apply bg-zinc-300 text-zinc-500 cursor-not-allowed;
+  }
+  
+  .btn-secondary {
+    @apply bg-zinc-100 hover:bg-zinc-200 text-zinc-700 font-medium px-3 py-2 sm:px-4 sm:py-2 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 text-sm sm:text-base;
+  }
+  
+  .btn-accent {
+    @apply bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-3 py-2 sm:px-4 sm:py-2 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 text-sm sm:text-base;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-zinc-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors duration-200 text-sm sm:text-base;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-zinc-200 dark:bg-zinc-800 dark:border-zinc-600 p-4 sm:p-6;
+  }
+  
+  .sidebar-item {
+    @apply flex items-center space-x-2 sm:space-x-3 px-3 py-2 sm:px-4 sm:py-3 text-zinc-600 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors duration-200 cursor-pointer text-sm sm:text-base;
+  }
+  
+  .sidebar-item.active {
+    @apply bg-emerald-50 text-emerald-600 font-medium;
+  }
+  
+  .status-badge {
+    @apply inline-flex items-center px-2 py-1 sm:px-2.5 sm:py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .status-available {
+    @apply bg-emerald-100 text-emerald-800;
+  }
+  
+  .status-rented {
+    @apply bg-emerald-100 text-emerald-800;
+  }
+  
+  .status-returned {
+    @apply bg-zinc-100 text-zinc-800;
+  }
+  
+  .status-late {
+    @apply bg-red-100 text-red-800;
+  }
+
+  /* Mobile-first responsive utilities */
+  .container-responsive {
+    @apply w-full px-4 sm:px-6 lg:px-8 mx-auto max-w-7xl;
+  }
+  
+  .grid-responsive {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6;
+  }
+  
+  .flex-responsive {
+    @apply flex flex-col sm:flex-row items-start sm:items-center;
+  }
+  
+  .text-responsive {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+  
+  .spacing-responsive {
+    @apply space-y-4 sm:space-y-6 md:space-y-8;
+  }
+  
+  .padding-responsive {
+    @apply p-4 sm:p-6 lg:p-8;
+  }
+  
+  .margin-responsive {
+    @apply m-4 sm:m-6 lg:m-8;
+  }
+  
+  /* Mobile navigation */
+  .mobile-nav {
+    @apply fixed bottom-0 left-0 right-0 bg-white dark:bg-zinc-800 border-t border-zinc-200 dark:border-zinc-600 z-50 sm:hidden;
+  }
+  
+  .mobile-nav-item {
+    @apply flex flex-col items-center py-2 px-3 text-xs text-zinc-600 dark:text-zinc-400 hover:text-emerald-600 dark:hover:text-emerald-400;
+  }
+  
+  /* Responsive tables */
+  .table-responsive {
+    @apply overflow-x-auto;
+  }
+  
+  .table-mobile {
+    @apply block sm:table w-full;
+  }
+  
+  .table-mobile thead {
+    @apply hidden sm:table-header-group;
+  }
+  
+  .table-mobile tbody {
+    @apply block sm:table-row-group;
+  }
+  
+  .table-mobile tr {
+    @apply block sm:table-row border-b border-zinc-200 dark:border-zinc-600 py-3 sm:py-0;
+  }
+  
+  .table-mobile td {
+    @apply block sm:table-cell text-left sm:text-center py-2 sm:py-3 px-2 sm:px-4;
+  }
+  
+  .table-mobile td:before {
+    @apply content-[''] sm:content-none;
+  }
+  
+  /* Mobile form improvements */
+  .form-mobile {
+    @apply space-y-4 sm:space-y-6;
+  }
+  
+  .form-group-mobile {
+    @apply space-y-2 sm:space-y-3;
+  }
+  
+  .label-mobile {
+    @apply block text-sm sm:text-base font-medium text-zinc-700 dark:text-zinc-300 mb-1 sm:mb-2;
+  }
+  
+  /* Mobile card improvements */
+  .card-mobile {
+    @apply p-4 sm:p-6 lg:p-8;
+  }
+  
+  .card-header-mobile {
+    @apply pb-3 sm:pb-4 mb-3 sm:mb-4 border-b border-zinc-200 dark:border-zinc-600;
+  }
+  
+  .card-content-mobile {
+    @apply space-y-3 sm:space-y-4;
+  }
+  
+  /* Mobile button improvements */
+  .btn-mobile {
+    @apply w-full sm:w-auto justify-center;
+  }
+  
+  .btn-group-mobile {
+    @apply flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2;
+  }
+  
+  /* Mobile sidebar improvements */
+  .sidebar-mobile {
+    @apply fixed inset-y-0 left-0 z-50 w-64 bg-white dark:bg-zinc-800 transform -translate-x-full transition-transform duration-300 ease-in-out sm:relative sm:translate-x-0;
+  }
+  
+  .sidebar-mobile.open {
+    @apply translate-x-0;
+  }
+  
+  /* Mobile overlay */
+  .overlay-mobile {
+    @apply fixed inset-0 bg-black bg-opacity-50 z-40 sm:hidden;
+  }
+  
+  /* Mobile search improvements */
+  .search-mobile {
+    @apply w-full sm:w-auto;
+  }
+  
+  .search-input-mobile {
+    @apply w-full px-3 py-2 text-sm sm:text-base;
+  }
+  
+  /* Mobile filter improvements */
+  .filter-mobile {
+    @apply flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2;
+  }
+  
+  .filter-select-mobile {
+    @apply w-full sm:w-auto text-sm sm:text-base;
+  }
+}
